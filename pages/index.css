@@ -1,0 +1,180 @@
+.gallery-grid {
+  width: 100%;
+  display: flex;
+}
+
+.gallery-grid_column {
+  background-clip: padding-box;
+}
+
+.image-container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 900px;
+}
+
+.main-heading {
+  font-size: 50px;
+  margin: 10px 0 !important;
+}
+
+.home-info {
+  font-size: 20px;
+  margin: 5px 0 !important;
+}
+
+.photo-list {
+  width: 85%;
+  overflow: hidden;
+  margin: 10px 10px 0 185px;
+}
+
+.photo-item {
+  display: flex;
+  position: relative;
+  width: 450px;
+  margin: 10px 0;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); */
+}
+
+.search-button {
+  color: grey !important;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  transition: 0.1s;
+  bottom: 3%;
+}
+
+.img-title {
+  margin-left: 7px;
+  align-self: center;
+  width: fit-content;
+  color: #ececec;
+}
+
+.profile-img {
+  border-radius: 30px 30px 30px 30px;
+}
+
+.img-overlay .img-header,
+.profile-img,
+.img-title {
+  visibility: hidden;
+}
+
+.photo-item:hover .img-header {
+  visibility: visible;
+}
+
+.photo-item:hover .profile-img {
+  visibility: visible;
+}
+
+.photo-item:hover .img-title {
+  visibility: visible;
+}
+
+.ReactModal__Content::before {
+  content: heloo;
+}
+
+.img-title:hover {
+  color: #fefefe;
+}
+
+.main-img:hover {
+  filter: brightness(75%);
+  cursor: zoom-in;
+}
+
+.img-header {
+  display: flex;
+  margin-left: 15px;
+}
+
+.modal-container {
+  width: 700px;
+  margin-inline: auto;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.gallery-grid_column > div {
+  background: #ffffff;
+  padding: 0 0px;
+}
+
+.image-result {
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close-button {
+  padding: 0 !important;
+  position: fixed !important;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
